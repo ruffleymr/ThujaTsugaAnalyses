@@ -1,0 +1,15 @@
+// Search ranges and rules file
+// ****************************
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all Ns are in number of haploid individuals
+1   N0$   unif   100000   1e+06   output
+1   N1$   unif   100000   1e+06   output
+1   Tdiv1$   unif   50000   1e+06   output
+0   MIG1$   unif   5e-07   5e-05   output
+0   MIG2$   unif   5e-07   5e-05   output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+1 Tmig1end$ =  Tdiv1$  / 2 output

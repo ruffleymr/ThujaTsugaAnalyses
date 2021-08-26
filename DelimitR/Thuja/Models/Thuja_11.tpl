@@ -1,0 +1,29 @@
+//Number of population samples (demes)
+2
+//Population effective sizes (number of genes)
+N0$
+N1$
+//Sample sizes
+42
+42
+//Growth rates: negative growth implies population expansion
+Gro1$
+Gro2$
+//Number of migration matrices : 0 implies no migration between demes
+2
+//migrationmatrix
+0 0
+0 0
+//migrationmatrix
+0 MIG1$
+MIG2$ 0
+//historical event: time, source, sink, migrants, new size, new growth rate, migr. matrix
+2 historical event
+Tdiv1$ 0 1 1 BtnMag$ 0 0
+0 0 0 0 1 keep 1
+//Number of independent loci [chromosome]
+1041
+//Per chromosome: Number of linkage blocks
+1
+//per Block: data type, num loc. rec. rate and mut rate + optional paramters
+SNP 1 0 0 0.01

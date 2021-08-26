@@ -1,0 +1,21 @@
+// Search ranges and rules file
+// ****************************
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all Ns are in number of haploid individuals
+1   N0$   unif   100000   1e+06   output
+1   N1$   unif   100000   1e+06   output
+1   Tdiv1$   unif   1000   5000   output
+1   Texp$   unif   1000   5000   output
+0   BtnMag$  unif   0.05   0.50   output
+0   Gro1$   unif   -0.001   -0.00035  output
+0   Gro2$   unif   -0.001   -0.00035  output
+0   MIG1$   unif   5e-07   5e-05   output
+0   MIG2$   unif   5e-07   5e-05   output
+
+
+[RULES]
+
+Texp$ < Tdiv1$
+
+[COMPLEX PARAMETERS]
